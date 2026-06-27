@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: #030014;
+    overflow-x: hidden;
+    width: 100%;
+}
+header{
+    width: 100%;
+    min-height: 100vh;
+    background: url('image.png') no-repeat center center/cover;
+    padding-bottom: 50px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 120px;
+    width: 100%;
+}
+nav .left-section{
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+}
+nav .mid-section ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+nav .mid-section ul li a{
+    text-decoration: none;
+    color: #929199;
+    font-size: 15px;
+    font-weight: 500;
+}
+nav .mid-section ul li a:hover{
+    color: white;
+}
+nav .right-section button{
+    width: 140px;
+    height: 43px;
+    border-radius: 20px;
+    background: transparent;
+    color: #04d9ff;
+    border: 1px solid #005666;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+nav .right-section button:hover{
+    background-color: #002b33;
+}
+.hero-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 0 20px;
+    text-align: center;
+    width: 100%;
+}
+.hero-section .slots{
+    width: 150px;
+    height: 35px;
+    border: 1px solid #4d4966;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d0a21;
+}
+.hero-section .slots p{
+    color: #04d9ff;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.hero-section .main-text{
+    font-size: 45px;
+    color: white;
+    font-weight: 700;
+    margin-top: 35px;
+}
+.hero-section .main-text span{
+    background: linear-gradient(to right, #00f2fe, #4facfe, #9d4ede);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.hero-section .sub-text{
+    color: #83818c;
+    font-size: 15px;
+    width: 100%;
+    max-width: 530px;
+    margin-top: 15px;
+    line-height: 25px;
+}
+
+/* Form Styles Responsive with Flex */
+.hero-form-container {
+    margin-top: 35px;
+    text-align: left;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.hero-form-container h3 {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+.hero-form-container p {
+    color: #83818c;
+    font-size: 13px;
+}
+.hero-form-container input {
+    width: 100%;
+    height: 44px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #4d4966;
+    background: #0d0a21;
+    color: white;
+    font-size: 14px;
+}
+.hero-form-container .form-submit-btn {
+    width: 100%;
+    height: 44px;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background 0.2s;
+}
+.hero-form-container .form-submit-btn:hover {
+    background: #e2e2e2;
+}
+.hero-form-container .form-note {
+    color: #83818c;
+    font-size: 12px;
+    margin-top: 2px;
+    text-align: center;
+}
+
+.hero-section .buttons{
+    display: flex;
+    gap: 25px;
+    margin-top: 35px;
+}
+.hero-section .buttons .btn1{
+    width: 150px;
+    height: 48px;
+    background: linear-gradient(to right, #00f2fe, #4facfe);
+    border: none;
+    border-radius: 25px;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.hero-section .buttons .btn1:hover{
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+}
+.hero-section .buttons .btn2{
+    width: 150px;
+    height: 48px;
+    background-color: transparent;
+    border: 1px solid #4d4966;
+    border-radius: 25px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.hero-section .buttons .btn2:hover{
+    background-color: #0d0a21;
+}
+
+/* Services Section */
+.services-section {
+    position: relative;
+    padding: 120px 20px 80px 20px;
+    background: #030014 url('mid-bg.png') no-repeat center center/cover !important;
+    width: 100%;
+}
+.section-title h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    text-align: center;
+    color: white;
+}
+.section-title p {
+    color: #a0aec0;
+    margin-bottom: 60px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.services-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.service-card {
+    background: rgba(13, 10, 33, 0.8);
+    border: 1px solid #4d4966;
+    padding: 40px 30px;
+    border-radius: 20px;
+    width: calc(33.333% - 20px);
+    min-width: 280px;
+}
+.service-icon {
+    width: 60px;
+    height: 60px;
+    background: #0d0a21;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+    border: 1px solid #4d4966;
+}
+.service-card h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+.service-card p {
+    color: #83818c;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Stats Section */
+.stats-section {
+    position: relative;
+    padding: 80px 20px;
+    background: #030014 url('mid-bg.png') no-repeat center center/cover !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    width: 100%;
+}
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.stat-item {
+    text-align: center;
+}
+.stat-number {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #04d9ff;
+    margin-bottom: 5px;
+}
+.stat-label {
+    color: #83818c;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    background: url('image.png') no-repeat center center/cover;
+    padding: 80px 8% 30px 8%;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    width: 100%;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+.footer-info h3 {
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+}
+.footer-info p {
+    color: #83818c;
+    margin-top: 20px;
+    font-size: 0.95rem;
+}
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.footer-bottom p {
+    color: #718096;
+    font-size: 0.9rem;
+}
+
+/* ==========================================
+   MUKAMMAL RESPONSIVE MEDIA QUERIES (FLEX CODES)
+   ========================================== */
+@media (max-width: 968px) {
+    nav {
+        padding: 20px 40px;
+    }
+    nav .mid-section {
+        display: none; /* Mobile par ul links hide ho jayenge overflow se bachne ke liye */
+    }
+    .hero-section .main-text {
+        font-size: 36px;
+    }
+    .services-grid {
+        justify-content: center;
+    }
+    .service-card {
+        width: calc(50% - 15px);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        margin-top: 40px;
+    }
+    .hero-section .main-text {
+        font-size: 32px;
+    }
+    .hero-form-container {
+        max-width: 100%; /* Mobile par form poori width le lega safely */
+    }
+}
+
+@media (max-width: 576px) {
+    nav {
+        padding: 20px;
+    }
+    nav .left-section {
+        font-size: 20px;
+    }
+    nav .right-section button {
+        width: 110px;
+        height: 38px;
+        font-size: 13px;
+    }
+    .hero-section .main-text {
+        font-size: 26px;
+    }
+    .hero-section .sub-text {
+        font-size: 14px;
+    }
+    .hero-section .buttons {
+        flex-direction: column; /* Buttons mobile par upar niche ho jayenge */
+        gap: 15px;
+        width: 100%;
+        align-items: center;
+    }
+    .hero-section .buttons .btn1, 
+    .hero-section .buttons .btn2 {
+        width: 100%;
+        max-width: 280px;
+    }
+    .service-card {
+        width: 100%;
+    }
+    .stats-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
